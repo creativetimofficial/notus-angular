@@ -23,6 +23,8 @@ import { MapExampleComponent } from './components/maps/map-example/map-example.c
 import { AuthNavbarComponent } from './components/navbars/auth-navbar/auth-navbar.component';
 import { AdminNavbarComponent } from './components/navbars/admin-navbar/admin-navbar.component';
 import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
+import { AdminComponent } from './layouts/admin/admin.component';
+import { AuthComponent } from './layouts/auth/auth.component';
 
 @NgModule({
   declarations: [
@@ -47,6 +49,8 @@ import { IndexNavbarComponent } from './components/navbars/index-navbar/index-na
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
+    AdminComponent,
+    AuthComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
