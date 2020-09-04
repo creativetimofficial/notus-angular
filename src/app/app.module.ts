@@ -6,7 +6,6 @@ import { AppComponent } from "./app.component";
 import { DashboardComponent } from "./views/dashboard/dashboard.component";
 import { CardBarChartComponent } from "./components/cards/card-bar-chart/card-bar-chart.component";
 import { CardLineChartComponent } from "./components/cards/card-line-chart/card-line-chart.component";
-import { NavbarComponent } from "./components/navbar/navbar.component";
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
@@ -20,6 +19,10 @@ import { CardSocialTrafficComponent } from './components/cards/card-social-traff
 import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
 import { CardTableComponent } from './components/cards/card-table/card-table.component';
 import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
+import { MapExampleComponent } from './components/maps/map-example/map-example.component';
+import { AuthNavbarComponent } from './components/navbars/auth-navbar/auth-navbar.component';
+import { AdminNavbarComponent } from './components/navbars/admin-navbar/admin-navbar.component';
+import { IndexNavbarComponent } from './components/navbars/index-navbar/index-navbar.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +30,6 @@ import { HeaderStatsComponent } from './components/headers/header-stats/header-s
     DashboardComponent,
     CardBarChartComponent,
     CardLineChartComponent,
-    NavbarComponent,
     NotificationDropdownComponent,
     UserDropdownComponent,
     SidebarComponent,
@@ -41,6 +43,10 @@ import { HeaderStatsComponent } from './components/headers/header-stats/header-s
     CardStatsComponent,
     CardTableComponent,
     HeaderStatsComponent,
+    MapExampleComponent,
+    AuthNavbarComponent,
+    AdminNavbarComponent,
+    IndexNavbarComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
