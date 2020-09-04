@@ -7,8 +7,8 @@ import { DashboardComponent } from "./views/dashboard/dashboard.component";
 import { BarChartComponent } from "./components/bar-chart/bar-chart.component";
 import { LineChartComponent } from "./components/line-chart/line-chart.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
-import { NotificationDropdownComponent } from "./components/notification-dropdown/notification-dropdown.component";
-import { UserDropdownComponent } from "./components/user-dropdown/user-dropdown.component";
+import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
+import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 
 @NgModule({
