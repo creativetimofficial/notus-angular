@@ -5,7 +5,7 @@ import { createPopper } from "@popperjs/core";
   selector: "app-table-dropdown",
   templateUrl: "./table-dropdown.component.html",
 })
-export class NotificationDropdownComponent implements OnInit {
+export class TableDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
   @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
   popper = document.createElement("div");
