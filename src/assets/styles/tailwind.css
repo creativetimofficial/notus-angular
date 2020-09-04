@@ -2299,12 +2299,6 @@ video {
   color: rgba(72, 187, 120, var(--text-opacity));
 }
 
-.text-pink-500 {
-  --text-opacity: 1;
-  color: #ed64a6;
-  color: rgba(237, 100, 166, var(--text-opacity));
-}
-
 .hover\:text-gray-600:hover {
   --text-opacity: 1;
   color: #718096;
@@ -2323,10 +2317,10 @@ video {
   color: rgba(26, 32, 44, var(--text-opacity));
 }
 
-.hover\:text-pink-600:hover {
+.hover\:text-red-600:hover {
   --text-opacity: 1;
-  color: #d53f8c;
-  color: rgba(213, 63, 140, var(--text-opacity));
+  color: #e53e3e;
+  color: rgba(229, 62, 62, var(--text-opacity));
 }
 
 .italic {
