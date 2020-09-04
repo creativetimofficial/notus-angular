@@ -13,6 +13,12 @@ import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { FooterComponent } from './components/footers/footer/footer.component';
 import { FooterSmallComponent } from './components/footers/footer-small/footer-small.component';
 import { FooterAdminComponent } from './components/footers/footer-admin/footer-admin.component';
+import { CardPageVisitsComponent } from './components/cards/card-page-visits/card-page-visits.component';
+import { CardProfileComponent } from './components/cards/card-profile/card-profile.component';
+import { CardSettingsComponent } from './components/cards/card-settings/card-settings.component';
+import { CardSocialTrafficComponent } from './components/cards/card-social-traffic/card-social-traffic.component';
+import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
+import { CardTableComponent } from './components/cards/card-table/card-table.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +33,12 @@ import { FooterAdminComponent } from './components/footers/footer-admin/footer-a
     FooterComponent,
     FooterSmallComponent,
     FooterAdminComponent,
+    CardPageVisitsComponent,
+    CardProfileComponent,
+    CardSettingsComponent,
+    CardSocialTrafficComponent,
+    CardStatsComponent,
+    CardTableComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
