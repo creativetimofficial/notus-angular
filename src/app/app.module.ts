@@ -4,8 +4,8 @@ import { NgModule } from "@angular/core";
 import { AppRoutingModule } from "./app-routing.module";
 import { AppComponent } from "./app.component";
 import { DashboardComponent } from "./views/dashboard/dashboard.component";
-import { BarChartComponent } from "./components/bar-chart/bar-chart.component";
-import { LineChartComponent } from "./components/line-chart/line-chart.component";
+import { CardBarChartComponent } from "./components/cards/card-bar-chart/card-bar-chart.component";
+import { CardLineChartComponent } from "./components/cards/card-line-chart/card-line-chart.component";
 import { NavbarComponent } from "./components/navbar/navbar.component";
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
@@ -18,8 +18,8 @@ import { FooterAdminComponent } from './components/footers/footer-admin/footer-a
   declarations: [
     AppComponent,
     DashboardComponent,
-    BarChartComponent,
-    LineChartComponent,
+    CardBarChartComponent,
+    CardLineChartComponent,
     NavbarComponent,
     NotificationDropdownComponent,
     UserDropdownComponent,

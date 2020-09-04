@@ -2,10 +2,10 @@ import { Component, OnInit, AfterViewInit } from "@angular/core";
 import Chart from "chart.js";
 
 @Component({
-  selector: "app-line-chart",
-  templateUrl: "./line-chart.component.html",
+  selector: "app-card-line-chart",
+  templateUrl: "./card-line-chart.component.html",
 })
-export class LineChartComponent implements OnInit {
+export class CardLineChartComponent implements OnInit {
   constructor() {}
 
   ngOnInit() {}
