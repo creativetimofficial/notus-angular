@@ -1,5 +1,5 @@
 import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import Popper from "popper.js";
+import { createPopper } from '@popperjs/core';
 
 @Component({
   selector: 'app-notification-dropdown',
@@ -40,7 +40,7 @@ export class NotificationDropdownComponent implements OnInit {
     this.popper.parentNode.removeChild(this.popper);
   }
   createPoppper(){
-    new Popper(this.btnDropdownRef.nativeElement, this.popper, {
+    createPopper(this.btnDropdownRef.nativeElement, this.popper, {
       placement: "bottom-end"
     });
     this.btnDropdownRef.nativeElement.parentNode.insertBefore(this.popper, this.btnDropdownRef.nativeElement.nextSibling);
