@@ -1,16 +1,15 @@
-import { BrowserModule } from '@angular/platform-browser';
-import { NgModule } from '@angular/core';
+import { BrowserModule } from "@angular/platform-browser";
+import { NgModule } from "@angular/core";
 
-import { AppRoutingModule } from './app-routing.module';
-import { AppComponent } from './app.component';
-import { DashboardComponent } from './pages/dashboard/dashboard.component';
-import { BarChartComponent } from './components/bar-chart/bar-chart.component';
-import { LineChartComponent } from './components/line-chart/line-chart.component';
-import { NavbarComponent } from './components/navbar/navbar.component';
-import { NotificationDropdownComponent } from './components/notification-dropdown/notification-dropdown.component';
-import { UserDropdownComponent } from './components/user-dropdown/user-dropdown.component';
-import { SidebarComponent } from './components/sidebar/sidebar.component';
-
+import { AppRoutingModule } from "./app-routing.module";
+import { AppComponent } from "./app.component";
+import { DashboardComponent } from "./pages/dashboard/dashboard.component";
+import { BarChartComponent } from "./components/bar-chart/bar-chart.component";
+import { LineChartComponent } from "./components/line-chart/line-chart.component";
+import { NavbarComponent } from "./components/navbar/navbar.component";
+import { NotificationDropdownComponent } from "./components/notification-dropdown/notification-dropdown.component";
+import { UserDropdownComponent } from "./components/user-dropdown/user-dropdown.component";
+import { SidebarComponent } from "./components/sidebar/sidebar.component";
 
 @NgModule({
   declarations: [
@@ -21,13 +20,10 @@ import { SidebarComponent } from './components/sidebar/sidebar.component';
     NavbarComponent,
     NotificationDropdownComponent,
     UserDropdownComponent,
-    SidebarComponent
+    SidebarComponent,
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+  imports: [BrowserModule, AppRoutingModule],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

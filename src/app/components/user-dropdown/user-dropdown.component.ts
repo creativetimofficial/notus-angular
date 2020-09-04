@@ -1,13 +1,13 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
-import { createPopper } from '@popperjs/core';
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
+import { createPopper } from "@popperjs/core";
 
 @Component({
-  selector: 'app-user-dropdown',
-  templateUrl: './user-dropdown.component.html'
+  selector: "app-user-dropdown",
+  templateUrl: "./user-dropdown.component.html",
 })
 export class UserDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
-  @ViewChild('btnDropdownRef',{ static: false }) btnDropdownRef:ElementRef;
+  @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
   popper = document.createElement("div");
   ngOnInit() {
     this.popper.innerHTML = `<div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1" style="min-width:12rem" #popoverDropdownRef>
@@ -26,9 +26,9 @@ export class UserDropdownComponent implements OnInit {
   </a>
 </div>`;
   }
-  toggleDropdown(event){
+  toggleDropdown(event) {
     event.preventDefault();
-    if(this.dropdownPopoverShow){
+    if (this.dropdownPopoverShow) {
       this.dropdownPopoverShow = false;
       this.destroyPopper();
     } else {
@@ -36,14 +36,16 @@ export class UserDropdownComponent implements OnInit {
       this.createPoppper();
     }
   }
-  destroyPopper(){
+  destroyPopper() {
     this.popper.parentNode.removeChild(this.popper);
   }
-  createPoppper(){
+  createPoppper() {
     createPopper(this.btnDropdownRef.nativeElement, this.popper, {
-      placement: "bottom-end"
+      placement: "bottom-end",
     });
-    this.btnDropdownRef.nativeElement.parentNode.insertBefore(this.popper, this.btnDropdownRef.nativeElement.nextSibling);
-
+    this.btnDropdownRef.nativeElement.parentNode.insertBefore(
+      this.popper,
+      this.btnDropdownRef.nativeElement.nextSibling
+    );
   }
 }
