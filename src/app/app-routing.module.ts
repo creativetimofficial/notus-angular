@@ -23,25 +23,25 @@ import { ProfileComponent } from './views/profile/profile.component';
 const routes: Routes = [
   // admin views
   {
-    path: "/admin", component: AdminComponent, children: [
-      { path: "/admin/dashboard", component: DashboardComponent },
-      { path: "/admin/settings", component: SettingsComponent },
-      { path: "/admin/tables", component: TablesComponent },
-      { path: "/admin/maps", component: MapsComponent },
+    path: "admin", component: AdminComponent, children: [
+      { path: "admin/dashboard", component: DashboardComponent },
+      { path: "admin/settings", component: SettingsComponent },
+      { path: "admin/tables", component: TablesComponent },
+      { path: "admin/maps", component: MapsComponent },
     ]},
     // auth views
     {
-      path: "/auth", component: AuthComponent, children: [
-        { path: "/auth/login", component: LoginComponent },
-        { path: "/auth/register", component: RegisterComponent },
+      path: "auth", component: AuthComponent, children: [
+        { path: "auth/login", component: LoginComponent },
+        { path: "auth/register", component: RegisterComponent },
       ]},
       // no layout views
       { path: "profile", component: ProfileComponent },
       { path: "landing", component: LandingComponent },
-      { path: "/", component: IndexComponent },
-      { path: "/admin", redirectTo: "/admin/dashboard", pathMatch: "full" },
-      { path: "/auth", redirectTo: "/auth/login", pathMatch: "full" },
-      { path: "**", redirectTo: "/", pathMatch: "full" },
+      { path: "", component: IndexComponent },
+      { path: "admin", redirectTo: "admin/dashboard", pathMatch: "full" },
+      { path: "auth", redirectTo: "auth/login", pathMatch: "full" },
+      { path: "**", redirectTo: "", pathMatch: "full" },
     ];
 
     @NgModule({
