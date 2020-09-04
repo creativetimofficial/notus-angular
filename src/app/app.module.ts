@@ -19,6 +19,7 @@ import { CardSettingsComponent } from './components/cards/card-settings/card-set
 import { CardSocialTrafficComponent } from './components/cards/card-social-traffic/card-social-traffic.component';
 import { CardStatsComponent } from './components/cards/card-stats/card-stats.component';
 import { CardTableComponent } from './components/cards/card-table/card-table.component';
+import { HeaderStatsComponent } from './components/headers/header-stats/header-stats.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +40,7 @@ import { CardTableComponent } from './components/cards/card-table/card-table.com
     CardSocialTrafficComponent,
     CardStatsComponent,
     CardTableComponent,
+    HeaderStatsComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],
