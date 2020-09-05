@@ -59,7 +59,7 @@ export class MapExampleComponent implements OnInit {
         {
           featureType: "water",
           elementType: "all",
-          stylers: [{ color: "#5e72e4" }, { visibility: "on" }],
+          stylers: [{ color: "#feb2b2" }, { visibility: "on" }],
         },
       ],
     };
