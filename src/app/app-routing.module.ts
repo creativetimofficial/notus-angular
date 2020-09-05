@@ -24,16 +24,16 @@ const routes: Routes = [
   // admin views
   {
     path: "admin", component: AdminComponent, children: [
-      { path: "admin/dashboard", component: DashboardComponent },
-      { path: "admin/settings", component: SettingsComponent },
-      { path: "admin/tables", component: TablesComponent },
-      { path: "admin/maps", component: MapsComponent },
+      { path: "dashboard", component: DashboardComponent },
+      { path: "settings", component: SettingsComponent },
+      { path: "tables", component: TablesComponent },
+      { path: "maps", component: MapsComponent },
     ]},
     // auth views
     {
       path: "auth", component: AuthComponent, children: [
-        { path: "auth/login", component: LoginComponent },
-        { path: "auth/register", component: RegisterComponent },
+        { path: "login", component: LoginComponent },
+        { path: "register", component: RegisterComponent },
       ]},
       // no layout views
       { path: "profile", component: ProfileComponent },
