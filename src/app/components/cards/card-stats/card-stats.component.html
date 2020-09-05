@@ -23,7 +23,9 @@
     <p class="text-sm text-gray-500 mt-4">
       <span class="mr-2" [ngClass]="statPercentColor">
         <i
-          [ngClass]="statArrow === 'up' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'"
+          [ngClass]="
+            statArrow === 'up' ? 'fas fa-arrow-up' : 'fas fa-arrow-down'
+          "
         ></i>
         {{ statPercent }}%
       </span>

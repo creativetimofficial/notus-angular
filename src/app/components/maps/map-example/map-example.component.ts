@@ -1,14 +1,13 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 declare const google: any;
 
 @Component({
-  selector: 'app-map-example',
-  templateUrl: './map-example.component.html'
+  selector: "app-map-example",
+  templateUrl: "./map-example.component.html",
 })
 export class MapExampleComponent implements OnInit {
-
-  constructor() { }
+  constructor() {}
 
   ngOnInit(): void {
     let map = document.getElementById("map-canvas");
@@ -86,5 +85,4 @@ export class MapExampleComponent implements OnInit {
       infowindow.open(map, marker);
     });
   }
-
 }

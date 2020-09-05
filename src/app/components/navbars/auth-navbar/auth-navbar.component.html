@@ -7,7 +7,8 @@
     <div
       class="w-full relative flex justify-between lg:w-auto lg:static lg:block lg:justify-start"
     >
-      <a [routerLink]="['/']"
+      <a
+        [routerLink]="['/']"
         class="text-white text-sm font-bold leading-relaxed inline-block mr-4 py-2 whitespace-no-wrap uppercase"
       >
         Tailwind Webapp Angular
@@ -22,7 +23,7 @@
     </div>
     <div
       class="lg:flex flex-grow items-center bg-white lg:bg-transparent lg:shadow-none"
-      [ngClass]="{'hidden': !navbarOpen, 'block rounded shadow-lg': navbarOpen}"
+      [ngClass]="{ hidden: !navbarOpen, 'block rounded shadow-lg': navbarOpen }"
       id="example-navbar-warning"
     >
       <ul class="flex flex-col lg:flex-row list-none mr-auto">
