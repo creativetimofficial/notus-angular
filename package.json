@@ -1,7 +1,9 @@
 {
-  "name": "angular-landing-page",
-  "version": "0.0.0",
-  "private": true,
+  "name": "tailwind-webapp-angular",
+  "version": "1.0.0",
+  "description": "Tailwind Webapp angular - A free Tailwind and Angular webapp template by Creative Tim.",
+  "repository": "https://github.com/creativetimofficial/tailwind-webapp-angular",
+  "license": "MIT",
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
