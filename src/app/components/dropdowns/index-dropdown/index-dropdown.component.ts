@@ -40,7 +40,7 @@ export class IndexDropdownComponent implements OnInit {
   >
     Maps
   </a>
-  <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+  <div class="h-0 mx-4 my-2 border border-solid border-gray-200"></div>
   <span
     class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
   >
@@ -58,7 +58,7 @@ export class IndexDropdownComponent implements OnInit {
   >
     Register
   </a>
-  <div class="h-0 mx-4 my-2 border border-solid border-gray-200" />
+  <div class="h-0 mx-4 my-2 border border-solid border-gray-200"></div>
   <span
     class="text-sm pt-2 pb-0 px-4 font-bold block w-full whitespace-no-wrap bg-transparent text-gray-500"
   >
