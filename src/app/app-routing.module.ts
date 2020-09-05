@@ -28,19 +28,19 @@ const routes: Routes = [
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
+      { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ]},
     // auth views
     {
       path: "auth", component: AuthComponent, children: [
         { path: "login", component: LoginComponent },
         { path: "register", component: RegisterComponent },
+        { path: "", redirectTo: "login", pathMatch: "full" },
       ]},
       // no layout views
       { path: "profile", component: ProfileComponent },
       { path: "landing", component: LandingComponent },
       { path: "", component: IndexComponent },
-      { path: "admin", redirectTo: "admin/dashboard", pathMatch: "full" },
-      { path: "auth", redirectTo: "auth/login", pathMatch: "full" },
       { path: "**", redirectTo: "", pathMatch: "full" },
     ];
 
