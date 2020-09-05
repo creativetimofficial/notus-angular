@@ -12,7 +12,8 @@
     "lint": "ng lint",
     "e2e": "ng e2e",
     "build:tailwind": "tailwind build src/assets/styles/index.css -o src/assets/styles/tailwind.css",
-    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start"
+    "install:clean": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && npm start",
+    "deploy": "rm -rf node_modules/ && rm -rf package-lock.json && npm install && npm run build:tailwind && ng deploy --repo=https://github.com/creativetimofficial/tailwind-webapp-angular.git"
   },
   "dependencies": {
     "@angular/animations": "10.1.0",
@@ -26,6 +27,7 @@
     "@fortawesome/fontawesome-free": "5.14.0",
     "@popperjs/core": "2.4.4",
     "@tailwindcss/custom-forms": "0.2.1",
+    "angular-cli-ghpages": "0.6.2",
     "chart.js": "2.9.3",
     "rxjs": "6.6.2",
     "tailwindcss": "1.7.6",

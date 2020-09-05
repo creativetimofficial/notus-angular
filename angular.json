@@ -13,7 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [ "chart.js" ],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ],
             "outputPath": "dist/angular-landing-page",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,7 +29,7 @@
             "styles": [
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/assets/styles/tailwind.css",
+              "src/assets/styles/tailwind.css"
             ],
             "scripts": []
           },
@@ -121,8 +123,13 @@
               "devServerTarget": "angular-landing-page:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
+    }
+  },
   "defaultProject": "angular-landing-page"
 }
