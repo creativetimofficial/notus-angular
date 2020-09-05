@@ -84,16 +84,18 @@
             [routerLink]="['/admin/dashboard']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #rla="routerLinkActive"
+            #adminDashboard="routerLinkActive"
             [ngClass]="
-              rla.isActive
+              adminDashboard.isActive
                 ? 'text-red-500 hover:text-red-600'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-tv mr-2 text-sm"
-              [ngClass]="rla.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="
+                adminDashboard.isActive ? 'opacity-75' : 'text-gray-400'
+              "
             ></i>
             Dashboard
           </a>
@@ -104,16 +106,18 @@
             [routerLink]="['/admin/settings']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #rla="routerLinkActive"
+            #adminSettings="routerLinkActive"
             [ngClass]="
-              rla.isActive
+              adminSettings.isActive
                 ? 'text-red-500 hover:text-red-600'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-tools mr-2 text-sm"
-              [ngClass]="rla.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="
+                adminSettings.isActive ? 'opacity-75' : 'text-gray-400'
+              "
             ></i>
             Settings
           </a>
@@ -124,16 +128,16 @@
             [routerLink]="['/admin/tables']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #rla="routerLinkActive"
+            #adminTables="routerLinkActive"
             [ngClass]="
-              rla.isActive
+              adminTables.isActive
                 ? 'text-red-500 hover:text-red-600'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-table mr-2 text-sm"
-              [ngClass]="rla.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="adminTables.isActive ? 'opacity-75' : 'text-gray-400'"
             ></i>
             Tables
           </a>
@@ -144,16 +148,16 @@
             [routerLink]="['/admin/maps']"
             class="text-xs uppercase py-3 font-bold block"
             routerLinkActive
-            #rla="routerLinkActive"
+            #adminMaps="routerLinkActive"
             [ngClass]="
-              rla.isActive
+              adminMaps.isActive
                 ? 'text-red-500 hover:text-red-600'
                 : 'text-gray-800 hover:text-gray-600'
             "
           >
             <i
               class="fas fa-map-marked mr-2 text-sm"
-              [ngClass]="rla.isActive ? 'opacity-75' : 'text-gray-400'"
+              [ngClass]="adminMaps.isActive ? 'opacity-75' : 'text-gray-400'"
             ></i>
             Maps
           </a>
