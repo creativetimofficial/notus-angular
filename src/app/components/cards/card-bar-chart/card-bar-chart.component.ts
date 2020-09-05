@@ -25,8 +25,8 @@ export class CardBarChartComponent implements OnInit, AfterViewInit {
         datasets: [
           {
             label: new Date().getFullYear(),
-            backgroundColor: "#ed64a6",
-            borderColor: "#ed64a6",
+            backgroundColor: "#e53e3e",
+            borderColor: "#e53e3e",
             data: [30, 78, 56, 34, 100, 45, 13],
             fill: false,
             barThickness: 8,
