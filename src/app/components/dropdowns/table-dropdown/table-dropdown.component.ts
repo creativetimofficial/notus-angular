@@ -1,13 +1,13 @@
-import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component, OnInit, ViewChild, ElementRef } from "@angular/core";
 import Popper from "popper.js";
 
 @Component({
-  selector: 'app-table-dropdown',
-  templateUrl: './table-dropdown.component.html'
+  selector: "app-table-dropdown",
+  templateUrl: "./table-dropdown.component.html",
 })
 export class TableDropdownComponent implements OnInit {
   dropdownPopoverShow = false;
-  @ViewChild('btnDropdownRef',{ static: false }) btnDropdownRef:ElementRef;
+  @ViewChild("btnDropdownRef", { static: false }) btnDropdownRef: ElementRef;
   popper = document.createElement("div");
   ngOnInit() {
     this.popper.style.zIndex = "1";
@@ -27,9 +27,9 @@ export class TableDropdownComponent implements OnInit {
   </a>
 </div>`;
   }
-  toggleDropdown(event){
+  toggleDropdown(event) {
     event.preventDefault();
-    if(this.dropdownPopoverShow){
+    if (this.dropdownPopoverShow) {
       this.dropdownPopoverShow = false;
       this.destroyPopper();
     } else {
@@ -37,14 +37,16 @@ export class TableDropdownComponent implements OnInit {
       this.createPoppper();
     }
   }
-  destroyPopper(){
+  destroyPopper() {
     this.popper.parentNode.removeChild(this.popper);
   }
-  createPoppper(){
+  createPoppper() {
     new Popper(this.btnDropdownRef.nativeElement, this.popper, {
-      placement: "bottom-end"
+      placement: "bottom-end",
     });
-    this.btnDropdownRef.nativeElement.parentNode.insertBefore(this.popper, this.btnDropdownRef.nativeElement.nextSibling);
-
+    this.btnDropdownRef.nativeElement.parentNode.insertBefore(
+      this.popper,
+      this.btnDropdownRef.nativeElement.nextSibling
+    );
   }
 }
