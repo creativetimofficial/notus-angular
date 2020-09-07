@@ -17,15 +17,20 @@
       [routerLink]="['/']"
       class="md:block text-left md:pb-2 text-gray-700 mr-0 inline-block whitespace-no-wrap text-sm uppercase font-bold p-4 px-0"
     >
-      Tailwind Webapp Angular
+      <span class="block sm:hidden">
+        Tailwind Angular
+      </span>
+      <span class="hidden sm:block">
+        Tailwind Webapp Angular
+      </span>
     </a>
     <!-- User -->
     <ul class="md:hidden items-center flex flex-wrap list-none">
       <li class="inline-block relative">
-        <app-notification-dropdown></app-notification-dropdown>
+        <app-notification-dropdown class="block"></app-notification-dropdown>
       </li>
       <li class="inline-block relative">
-        <app-user-dropdown></app-user-dropdown>
+        <app-user-dropdown class="block"></app-user-dropdown>
       </li>
     </ul>
     <!-- Collapse -->
