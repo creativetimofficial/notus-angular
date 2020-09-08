@@ -6,7 +6,7 @@
 
 ### A beautiful Starter Admin and Presentation Template for TailwindCSS and Angular.
 
-Tailwind Webapp Angular is Free and Open Source. It features multiple HTML elements and it comes with dynamic components for JavaScript (i.e. Vanilla JS).
+Tailwind Webapp Angular is Free and Open Source. It features multiple HTML elements and it comes with dynamic components for Angular.
 
 ### CSS Components
 
