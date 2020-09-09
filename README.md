@@ -116,7 +116,7 @@ We also feature the following 18 dynamic components:
 | [![Tailwind Webapp Angular](https://github.com/creativetimofficial/public-assets/blob/master/tailwind-webapp-angular/tailwind-webapp-angular.jpg?raw=true)](https://www.creative-tim.com/product/tailwind-webapp-angular?ref=tw-github-readme)  | [![Tailwind Webapp](https://github.com/creativetimofficial/public-assets/blob/master/tailwind-webapp/tailwind-webapp.jpg?raw=true)](https://www.creative-tim.com/product/tailwind-webapp?ref=tw-github-readme)  | [![Tailwind Webapp NextJS](https://github.com/creativetimofficial/public-assets/blob/master/tailwind-webapp-nextjs/tailwind-webapp-nextjs.jpg?raw=true)](https://www.creative-tim.com/product/tailwind-webapp-nextjs?ref=tw-github-readme)  | [![Tailwind Webapp React](https://github.com/creativetimofficial/public-assets/blob/master/tailwind-webapp-react/tailwind-webapp-react.jpg?raw=true)](https://www.creative-tim.com/product/tailwind-webapp-react?ref=tw-github-readme)  | [![Tailwind Webapp VueJS](https://github.com/creativetimofficial/public-assets/blob/master/tailwind-webapp-vuejs/tailwind-webapp-vuejs.jpg?raw=true)](https://www.creative-tim.com/product/tailwind-webapp-vuejs?ref=tw-github-readme)
 
 ## Documentation
-The documentation for the Tailwind Webapp Angular is hosted at our <a href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp?ref=tw-readme" target="_blank">website</a>.
+The documentation for the Tailwind Webapp Angular is hosted at our <a href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-angular?ref=tw-readme" target="_blank">website</a>.
 
 ## Quick start
 
