@@ -333,7 +333,7 @@ Instagram: <a href="https://www.instagram.com/creativetimofficial/" target="_bla
 ## Resources
 - Demo: <a href="https://demos.creative-tim.com/tailwind-webapp-angular/?ref=tw-readme" target="_blank">https://demos.creative-tim.com/tailwind-webapp-angular/?ref=tw-readme</a>
 - Download Page: <a href="https://www.creative-tim.com/product/tailwind-webapp-angular?ref=tw-github-readme" target="_blank">https://www.creative-tim.com/product/tailwind-webapp-angular</a>
-- Documentation: <a href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp?ref=tw-readme" target="_blank">https://www.creative-tim.com/learning-lab/tailwind/overview/webapp?ref=tw-readme</a>
+- Documentation: <a href="https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-angular?ref=tw-readme" target="_blank">https://www.creative-tim.com/learning-lab/tailwind/overview/webapp-angular?ref=tw-readme</a>
 - License Agreement: <a href="https://www.creative-tim.com/license?ref=tw-readme" target="_blank">https://www.creative-tim.com/license?ref=tw-readme</a>
 - Support: <a href="https://www.creative-tim.com/contact-us?ref=tw-readme" target="_blank">https://www.creative-tim.com/contact-us?ref=tw-readme</a>
 - Issues: <a href="https://github.com/creativetimofficial/tailwind-webapp-angular/issues" target="_blank">Github Issues Page</a>
