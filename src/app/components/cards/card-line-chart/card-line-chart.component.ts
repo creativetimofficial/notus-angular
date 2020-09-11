@@ -33,8 +33,8 @@ export class CardLineChartComponent implements OnInit {
           {
             label: new Date().getFullYear() - 1,
             fill: false,
-            backgroundColor: "#e53e3e",
-            borderColor: "#e53e3e",
+            backgroundColor: "#fed7d7",
+            borderColor: "#fed7d7",
             data: [40, 68, 86, 74, 56, 60, 87],
           },
         ],
