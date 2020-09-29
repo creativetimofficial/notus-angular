@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-landing-page": {
+    "tailwind-webapp-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": [ "chart.js" ],
-            "outputPath": "dist/angular-landing-page",
+            "outputPath": "dist/tailwind-webapp-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -26,7 +26,8 @@
             ],
             "styles": [
               "src/styles.css",
-              "node_modules/@fortawesome/fontawesome-free/css/all.min.css"
+              "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
+              "src/assets/styles/tailwind.css",
             ],
             "scripts": []
           },
@@ -65,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "angular-landing-page:build"
+            "browserTarget": "tailwind-webapp-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-landing-page:build:production"
+              "browserTarget": "tailwind-webapp-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-landing-page:build"
+            "browserTarget": "tailwind-webapp-angular:build"
           }
         },
         "test": {
@@ -113,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "angular-landing-page:serve"
+            "devServerTarget": "tailwind-webapp-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "angular-landing-page:serve:production"
+              "devServerTarget": "tailwind-webapp-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "angular-landing-page"
+  "defaultProject": "tailwind-webapp-angular"
 }
