@@ -75,7 +75,7 @@ export class MapExampleComponent implements OnInit {
 
     const contentString =
       '<div class="info-window-content"><h2>Notus Angular</h2>' +
-      "<p>A beautiful Dashboard for Bootstrap 4. It is Free and Open Source.</p></div>";
+      "<p>A beautiful UI Kit and Admin for Tailwind CSS. It is Free and Open Source.</p></div>";
 
     const infowindow = new google.maps.InfoWindow({
       content: contentString,

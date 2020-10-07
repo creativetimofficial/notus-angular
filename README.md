@@ -4,7 +4,7 @@
 
 ![Notus Angular](https://github.com/creativetimofficial/public-assets/blob/master/notus-angular/notus-angular.jpg?raw=true)
 
-### A beautiful Starter UI Kit and Admin for Tailwind CSS and Angular.
+### A beautiful UI Kit and Admin for Tailwind CSS and Angular.
 
 Start your development with a Free Tailwind CSS and Angular UI Kit and Admin. Let Notus Angular amaze you with its cool features and build tools and get your project to a whole new level.
 
