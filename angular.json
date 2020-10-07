@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "tailwind-webapp-angular": {
+    "notus-angular": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -14,7 +14,7 @@
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
             "allowedCommonJsDependencies": [ "chart.js" ],
-            "outputPath": "dist/tailwind-webapp-angular",
+            "outputPath": "dist/notus-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "tailwind-webapp-angular:build"
+            "browserTarget": "notus-angular:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "tailwind-webapp-angular:build:production"
+              "browserTarget": "notus-angular:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "tailwind-webapp-angular:build"
+            "browserTarget": "notus-angular:build"
           }
         },
         "test": {
@@ -114,15 +114,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "tailwind-webapp-angular:serve"
+            "devServerTarget": "notus-angular:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "tailwind-webapp-angular:serve:production"
+              "devServerTarget": "notus-angular:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "tailwind-webapp-angular"
+  "defaultProject": "notus-angular"
 }
