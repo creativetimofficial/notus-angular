@@ -1,8 +1,8 @@
 {
-  "name": "tailwind-webapp-angular",
+  "name": "notus-angular",
   "version": "1.0.0",
-  "description": "Tailwind WebApp Angular - A free Tailwind CSS and Angular WebApp UI Kit and Admin by Creative Tim.",
-  "repository": "https://github.com/creativetimofficial/tailwind-webapp-angular",
+  "description": "Notus Angular - Free Tailwind CSS UI Kit and Admin by Creative Tim.",
+  "repository": "https://github.com/creativetimofficial/notus-angular",
   "license": "MIT",
   "scripts": {
     "ng": "ng",
