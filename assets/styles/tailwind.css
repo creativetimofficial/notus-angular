@@ -1218,6 +1218,12 @@ video {
   background-color: rgba(74, 85, 104, var(--bg-opacity));
 }
 
+.active\:bg-red-600:active {
+  --bg-opacity: 1;
+  background-color: #e53e3e;
+  background-color: rgba(229, 62, 62, var(--bg-opacity));
+}
+
 .active\:bg-red-700:active {
   --bg-opacity: 1;
   background-color: #c53030;
