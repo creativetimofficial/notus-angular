@@ -13,7 +13,9 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "allowedCommonJsDependencies": [ "chart.js" ],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ],
             "outputPath": "dist/notus-angular",
             "index": "src/index.html",
             "main": "src/main.ts",
@@ -27,7 +29,7 @@
             "styles": [
               "src/styles.css",
               "node_modules/@fortawesome/fontawesome-free/css/all.min.css",
-              "src/assets/styles/tailwind.css",
+              "src/assets/styles/tailwind.css"
             ],
             "scripts": []
           },
@@ -103,7 +105,7 @@
             "tsConfig": [
               "tsconfig.app.json",
               "tsconfig.spec.json",
-              "e2e/tsconfig.json"
+              "cypress/tsconfig.json"
             ],
             "exclude": [
               "**/node_modules/**"
@@ -111,10 +113,35 @@
           }
         },
         "e2e": {
-          "builder": "@angular-devkit/build-angular:protractor",
+          "builder": "@briebug/cypress-schematic:cypress",
           "options": {
-            "protractorConfig": "e2e/protractor.conf.js",
+            "devServerTarget": "notus-angular:serve",
+            "watch": true,
+            "headless": false
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "notus-angular:serve:production"
+            }
+          }
+        },
+        "cypress-run": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
             "devServerTarget": "notus-angular:serve"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "notus-angular:serve:production"
+            }
+          }
+        },
+        "cypress-open": {
+          "builder": "@briebug/cypress-schematic:cypress",
+          "options": {
+            "devServerTarget": "notus-angular:serve",
+            "watch": true,
+            "headless": false
           },
           "configurations": {
             "production": {
@@ -123,6 +150,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "notus-angular"
 }
