@@ -1,8 +1,8 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: "app-auth-navbar",
-  templateUrl: "./auth-navbar.component.html",
+  selector: 'app-auth-navbar',
+  templateUrl: './auth-navbar.component.html',
 })
 export class AuthNavbarComponent implements OnInit {
   navbarOpen = false;
