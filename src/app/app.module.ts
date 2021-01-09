@@ -5,6 +5,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { VyoozModule } from './components/views/vyooz.module';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -14,7 +15,8 @@ import { VyoozModule } from './components/views/vyooz.module';
     BrowserModule,
     AppRoutingModule,
     ReactiveFormsModule,
-    VyoozModule
+    VyoozModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent],
