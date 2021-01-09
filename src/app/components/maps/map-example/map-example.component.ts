@@ -1,18 +1,18 @@
-import { Component, OnInit } from "@angular/core";
+import { Component, OnInit } from '@angular/core';
 
 declare const google: any;
 
 @Component({
-  selector: "app-map-example",
-  templateUrl: "./map-example.component.html",
+  selector: 'app-map-example',
+  templateUrl: './map-example.component.html',
 })
 export class MapExampleComponent implements OnInit {
   constructor() {}
 
   ngOnInit(): void {
-    let map = document.getElementById("map-canvas");
-    let lat = map.getAttribute("data-lat");
-    let lng = map.getAttribute("data-lng");
+    let map = document.getElementById('map-canvas');
+    const lat = map.getAttribute('data-lat');
+    const lng = map.getAttribute('data-lng');
 
     const myLatlng = new google.maps.LatLng(lat, lng);
     const mapOptions = {
@@ -22,44 +22,44 @@ export class MapExampleComponent implements OnInit {
       mapTypeId: google.maps.MapTypeId.ROADMAP,
       styles: [
         {
-          featureType: "administrative",
-          elementType: "labels.text.fill",
-          stylers: [{ color: "#444444" }],
+          featureType: 'administrative',
+          elementType: 'labels.text.fill',
+          stylers: [{ color: '#444444' }],
         },
         {
-          featureType: "landscape",
-          elementType: "all",
-          stylers: [{ color: "#f2f2f2" }],
+          featureType: 'landscape',
+          elementType: 'all',
+          stylers: [{ color: '#f2f2f2' }],
         },
         {
-          featureType: "poi",
-          elementType: "all",
-          stylers: [{ visibility: "off" }],
+          featureType: 'poi',
+          elementType: 'all',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "road",
-          elementType: "all",
+          featureType: 'road',
+          elementType: 'all',
           stylers: [{ saturation: -100 }, { lightness: 45 }],
         },
         {
-          featureType: "road.highway",
-          elementType: "all",
-          stylers: [{ visibility: "simplified" }],
+          featureType: 'road.highway',
+          elementType: 'all',
+          stylers: [{ visibility: 'simplified' }],
         },
         {
-          featureType: "road.arterial",
-          elementType: "labels.icon",
-          stylers: [{ visibility: "off" }],
+          featureType: 'road.arterial',
+          elementType: 'labels.icon',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "transit",
-          elementType: "all",
-          stylers: [{ visibility: "off" }],
+          featureType: 'transit',
+          elementType: 'all',
+          stylers: [{ visibility: 'off' }],
         },
         {
-          featureType: "water",
-          elementType: "all",
-          stylers: [{ color: "#feb2b2" }, { visibility: "on" }],
+          featureType: 'water',
+          elementType: 'all',
+          stylers: [{ color: '#feb2b2' }, { visibility: 'on' }],
         },
       ],
     };
@@ -68,20 +68,20 @@ export class MapExampleComponent implements OnInit {
 
     const marker = new google.maps.Marker({
       position: myLatlng,
-      map: map,
+      map,
       animation: google.maps.Animation.DROP,
-      title: "Hello World!",
+      title: 'Hello World!',
     });
 
     const contentString =
       '<div class="info-window-content"><h2>Notus Angular</h2>' +
-      "<p>A beautiful UI Kit and Admin for Tailwind CSS. It is Free and Open Source.</p></div>";
+      '<p>A beautiful UI Kit and Admin for Tailwind CSS. It is Free and Open Source.</p></div>';
 
     const infowindow = new google.maps.InfoWindow({
       content: contentString,
     });
 
-    google.maps.event.addListener(marker, "click", function () {
+    google.maps.event.addListener(marker, 'click', () => {
       infowindow.open(map, marker);
     });
   }
