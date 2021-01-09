@@ -40,12 +40,13 @@ export class UserDropdownComponent implements OnInit {
     this.popper.parentNode.removeChild(this.popper);
   }
   createPoppper() {
-    return new Popper(this.btnDropdownRef.nativeElement, this.popper, {
+    const creator = () => new Popper(this.btnDropdownRef.nativeElement, this.popper, {
       placement: 'bottom-end',
     });
     this.btnDropdownRef.nativeElement.parentNode.insertBefore(
       this.popper,
       this.btnDropdownRef.nativeElement.nextSibling
     );
+    creator();
   }
 }

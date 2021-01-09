@@ -1,21 +1,18 @@
-import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
-
-import { VyoozRoutingModule } from './vyooz-routing.module';
-import { ProfileComponent } from './profile/profile.component';
-import { LandingComponent } from './landing/landing.component';
-import { IndexComponent } from './index/index.component';
+import { NgModule } from '@angular/core';
+import { SharedModule } from '../../shared/shared.module';
+import { AuthModule } from '../auth/auth.module';
 import { LoginComponent } from '../auth/login/login.component';
 import { RegisterComponent } from '../auth/register/register.component';
 import { DashboardComponent } from './admin/dashboard/dashboard.component';
-import { MapsComponent } from '../maps/map-meta/maps.component';
 import { SettingsComponent } from './admin/settings/settings.component';
 import { TablesComponent } from './admin/tables/tables.component';
-import { AuthModule } from '../auth/auth.module';
-import { NavbarianModule } from '../omnipresent/navbars/navbarian.module';
-import { CardzenModule } from '../cards/cardzen.module';
-import { FooterrModule } from '../omnipresent/footers/footerr.module';
-import { MappeModule } from '../maps/mappe.module';
+import { IndexComponent } from './index/index.component';
+import { LandingComponent } from './landing/landing.component';
+import { OmniModule } from './omnipresent/omni.module';
+import { ProfileComponent } from './profile/profile.component';
+import { VyoozRoutingModule } from './vyooz-routing.module';
+
 
 const COMPS = [
   ProfileComponent,
@@ -26,7 +23,7 @@ const COMPS = [
   RegisterComponent,
 
   DashboardComponent,
-  MapsComponent,
+
   SettingsComponent,
   TablesComponent
 ]
@@ -39,10 +36,8 @@ const COMPS = [
     CommonModule,
     VyoozRoutingModule,
     AuthModule,
-    NavbarianModule,
-    CardzenModule,
-    FooterrModule,
-    MappeModule
+    SharedModule,
+    OmniModule
   ],
   exports: [
     ...COMPS

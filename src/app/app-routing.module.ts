@@ -11,12 +11,12 @@ const routes: Routes = [
   // no layout views
   { path: 'login', component: LoginComponent },
   { path: 'auth', loadChildren: () => import('./components/auth/auth.module').then(m => m.AuthModule )},
-  { path: 'o', loadChildren: () => import('./components/omnipresent/omni.module').then(m => m.OmniModule) },
-  { path: 'admin', loadChildren: () => import('./components/omnipresent/omni.module').then(m => m.OmniModule) },
+  { path: 'o', loadChildren: () => import('./components/views/omnipresent/omni.module').then(m => m.OmniModule) },
+  { path: 'admin', loadChildren: () => import('./components/views/omnipresent/omni.module').then(m => m.OmniModule) },
   { path: 'v', loadChildren: () => import('./components/views/vyooz.module').then(m => m.VyoozModule) },
   { path: 'profile', component: ProfileComponent },
-  { path: 'landing', component: LandingComponent },
-  { path: '', component: IndexComponent },
+  { path: 'i', component: IndexComponent },
+  { path: '', component: LandingComponent },
   { path: '**', redirectTo: '', pathMatch: 'full' },
 ];
 

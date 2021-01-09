@@ -1,10 +1,10 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { AdminComponent } from './layouts/admin/admin.component';
-import { DashboardComponent } from '../views/admin/dashboard/dashboard.component';
-import { SettingsComponent } from '../views/admin/settings/settings.component';
-import { TablesComponent } from '../views/admin/tables/tables.component';
-import { MapsComponent } from '../maps/map-meta/maps.component';
+import { DashboardComponent } from '../admin/dashboard/dashboard.component';
+import { SettingsComponent } from '../admin/settings/settings.component';
+import { TablesComponent } from '../admin/tables/tables.component';
+import { MapsComponent } from '../../../shared/maps/map-meta/maps.component';
 
 const routes: Routes = [
   // admin views
