@@ -9,7 +9,7 @@ import { SettingsComponent } from './admin/settings/settings.component';
 import { TablesComponent } from './admin/tables/tables.component';
 import { IndexComponent } from './index/index.component';
 import { LandingComponent } from './landing/landing.component';
-import { OmniModule } from './omnipresent/omni.module';
+import { OmniModule } from '../omnipresent/omni.module';
 import { ProfileComponent } from './profile/profile.component';
 import { VyoozRoutingModule } from './vyooz-routing.module';
 

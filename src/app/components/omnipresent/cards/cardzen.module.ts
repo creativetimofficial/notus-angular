@@ -9,7 +9,7 @@ import { CardSocialTrafficComponent } from './card-social-traffic/card-social-tr
 import { CardTableComponent } from './card-table/card-table.component';
 import { CardStatsComponent } from './card-stats/card-stats.component';
 import { RouterModule } from '@angular/router';
-import { ReactiveFormsModule } from '@angular/forms';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 const COMPS = [
   CardBarChartComponent,
@@ -29,6 +29,7 @@ const COMPS = [
   imports: [
     CommonModule,
     RouterModule,
+    FormsModule,
     ReactiveFormsModule
   ],
   exports: [

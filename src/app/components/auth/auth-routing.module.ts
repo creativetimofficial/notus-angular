@@ -2,8 +2,8 @@ import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { MapsComponent } from '../../shared/maps/map-meta/maps.component';
 import { TablesComponent } from '../views/admin/tables/tables.component';
-import { AdminComponent } from '../views/omnipresent/layouts/admin/admin.component';
-import { AuthComponent } from '../views/omnipresent/layouts/auth/auth.component';
+import { AdminComponent } from '../omnipresent/layouts/admin/admin.component';
+import { AuthComponent } from '../omnipresent/layouts/auth/auth.component';
 import { LoginComponent } from './login/login.component';
 import { RegisterComponent } from './register/register.component';
 

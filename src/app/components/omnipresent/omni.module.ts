@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { NgModule } from '@angular/core';
-import { SharedModule } from '../../../shared/shared.module';
+import { SharedModule } from '../../shared/shared.module';
 import { CardzenModule } from './cards/cardzen.module';
 import { HeaderStatsComponent } from './headers/header-stats/header-stats.component';
 import { AdminComponent } from './layouts/admin/admin.component';
