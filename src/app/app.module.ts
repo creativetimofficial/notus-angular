@@ -9,6 +9,7 @@ import { OmniModule } from './components/omnipresent/omni.module';
 import { VyoozModule } from './components/views/vyooz.module';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { ChartsModule } from 'ng2-charts';
 
 @NgModule({
   declarations: [
@@ -19,6 +20,7 @@ import { environment } from '../environments/environment';
     AppRoutingModule,
     FormsModule,
     ReactiveFormsModule,
+    ChartsModule,
     OmniModule,
     VyoozModule,
     AuthModule,
