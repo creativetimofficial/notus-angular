@@ -7,6 +7,8 @@ import { AppComponent } from './app.component';
 import { AuthModule } from './components/auth/auth.module';
 import { OmniModule } from './components/omnipresent/omni.module';
 import { VyoozModule } from './components/views/vyooz.module';
+import { ServiceWorkerModule } from '@angular/service-worker';
+import { environment } from '../environments/environment';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { VyoozModule } from './components/views/vyooz.module';
     OmniModule,
     VyoozModule,
     AuthModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ServiceWorkerModule.register('ngsw-worker.js', { enabled: environment.production })
   ],
   providers: [],
   bootstrap: [AppComponent],

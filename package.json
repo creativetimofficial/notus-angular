@@ -25,6 +25,7 @@
     "@angular/platform-browser": "11.0.3",
     "@angular/platform-browser-dynamic": "11.0.3",
     "@angular/router": "11.0.3",
+    "@angular/service-worker": "11.0.3",
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.11",
     "@briebug/jest-schematic": "^3.1.0",
