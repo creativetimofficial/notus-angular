@@ -23,6 +23,7 @@ import { MatGridComponent } from './mat-grid/mat-grid.component';
 import { MatNavComponent } from './mat-nav/mat-nav.component';
 import { MatTableComponent } from './mat-table/mat-table.component';
 import { MatTreeComponent } from './mat-tree/mat-tree.component';
+import { MatCardExpComponent } from './mat-card-exp/mat-card-exp.component';
 
 const COMPS = [
   CdkDndComponent,
@@ -55,7 +56,8 @@ const MAT_MODS = [
 
 @NgModule({
   declarations: [
-    ...COMPS
+    ...COMPS,
+    MatCardExpComponent
   ],
   imports: [
     CommonModule,
