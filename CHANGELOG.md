@@ -3,6 +3,8 @@
 ## [1.1.0] date
 ### Bug fixing
 - Rename `master` branch to `main`
+- To make a lot of our changes, we've followed the instructions from here (minus the `colors` and `font-sizes`)
+  - For the colors, the only change that we made, is the fact that we've added all Tailwind CSS colors to our `tailwind.config.js` files, and inside our product, all `{type}-gray-{number}` classes were renamed to `{type}-coolGray-{number}`
 ### Major style changes
 
 ### Deleted components
