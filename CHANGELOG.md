@@ -5,6 +5,17 @@
 - Rename `master` branch to `main`
 - To make a lot of our changes, we've followed the instructions from here (minus the `colors` and `font-sizes`)
   - For the colors, the only change that we made, is the fact that we've added all Tailwind CSS colors to our `tailwind.config.js` files, and inside our product, all `{type}-gray-{number}` classes were renamed to `{type}-coolGray-{number}`
+  - After that, we've changed `{type}-coolGray-{number}` to `{type}-coolGray-{lower-number}`, i.e. (`100` became `50`, `200` became `100`, ..., `900` became `800`)
+    - You can achieve this, by search in your whole project for `coolGray-100` and replace it with `coolGray-50`
+    - Then, you search in your whole project for `coolGray-200` and replace it with `coolGray-100`
+    - Then, you search in your whole project for `coolGray-300` and replace it with `coolGray-200`
+    - Then, you search in your whole project for `coolGray-400` and replace it with `coolGray-300`
+    - Then, you search in your whole project for `coolGray-500` and replace it with `coolGray-400`
+    - Then, you search in your whole project for `coolGray-600` and replace it with `coolGray-500`
+    - Then, you search in your whole project for `coolGray-700` and replace it with `coolGray-600`
+    - Then, you search in your whole project for `coolGray-800` and replace it with `coolGray-700`
+    - Then, you search in your whole project for `coolGray-900` and replace it with `coolGray-800`
+- `lg:bg-transparent` is not working anymore, so we've changed it with `lg:bg-opacity-0`
 ### Major style changes
 
 ### Deleted components
