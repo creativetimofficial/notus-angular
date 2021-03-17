@@ -11,17 +11,17 @@ export class NotificationDropdownComponent implements OnInit {
   popper = document.createElement("div");
   ngOnInit() {
     this.popper.innerHTML = `<div class="bg-white text-base z-50 float-left py-2 list-none text-left rounded shadow-lg mt-1" style="min-width:12rem" #popoverDropdownRef>
-  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-800">
+  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-700">
     Action
   </a>
-  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-800">
+  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-700">
     Another action
   </a>
-  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-800">
+  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-700">
     Something else here
   </a>
-  <div class="h-0 my-2 border border-solid border-coolGray-200"></div>
-  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-800">
+  <div class="h-0 my-2 border border-solid border-coolGray-100"></div>
+  <a href="#pablo" class="text-sm py-2 px-4 font-normal block w-full whitespace-nowrap bg-transparent  text-coolGray-700">
     Seprated link
   </a>
 </div>`;
