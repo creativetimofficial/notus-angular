@@ -13,7 +13,7 @@ module.exports = {
       "./*.ts",
     ],
     options: {
-      whitelist: [],
+      safelist: [],
     },
   },
   theme: {
