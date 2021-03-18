@@ -17,12 +17,8 @@
       [routerLink]="['/']"
       class="md:block text-left md:pb-2 text-coolGray-600 mr-0 inline-block whitespace-nowrap text-sm uppercase font-bold p-4 px-0"
     >
-      <span class="block sm:hidden">
-        Tailwind Angular
-      </span>
-      <span class="hidden sm:block">
-        Notus Angular
-      </span>
+      <span class="block sm:hidden"> Tailwind Angular </span>
+      <span class="hidden sm:block"> Notus Angular </span>
     </a>
     <!-- User -->
     <ul class="md:hidden items-center flex flex-wrap list-none">
@@ -142,7 +138,9 @@
           >
             <i
               class="fas fa-table mr-2 text-sm"
-              [ngClass]="adminTables.isActive ? 'opacity-75' : 'text-coolGray-300'"
+              [ngClass]="
+                adminTables.isActive ? 'opacity-75' : 'text-coolGray-300'
+              "
             ></i>
             Tables
           </a>
@@ -162,7 +160,9 @@
           >
             <i
               class="fas fa-map-marked mr-2 text-sm"
-              [ngClass]="adminMaps.isActive ? 'opacity-75' : 'text-coolGray-300'"
+              [ngClass]="
+                adminMaps.isActive ? 'opacity-75' : 'text-coolGray-300'
+              "
             ></i>
             Maps
           </a>
