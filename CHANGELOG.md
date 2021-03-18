@@ -3,7 +3,7 @@
 ## [1.1.0] date
 ### Bug fixing
 - Rename `master` branch to `main`
-- To make a lot of our changes, we've followed the instructions from here (minus the `colors` and `font-sizes`)
+- To make a lot of our changes, we've followed the instructions from here (minus the `colors` and `font-sizes`): https://tailwindcss.com/docs/upgrading-to-v2
   - For the colors, the only change that we made, is the fact that we've added all Tailwind CSS colors to our `tailwind.config.js` files, and inside our product, all `{type}-gray-{number}` classes were renamed to `{type}-coolGray-{number}`
   - After that, we've changed `{type}-coolGray-{number}` to `{type}-coolGray-{lower-number}`, i.e. (`100` became `50`, `200` became `100`, ..., `900` became `800`)
     - You can achieve this, by search in your whole project for `coolGray-100` and replace it with `coolGray-50`
