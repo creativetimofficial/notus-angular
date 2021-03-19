@@ -27,7 +27,7 @@
     "@fortawesome/fontawesome-free": "5.15.3",
     "@popperjs/core": "2.9.1",
     "@tailwindcss/forms": "0.2.1",
-    "angular-cli-ghpages": "0.6.2",
+    "angular-cli-ghpages": "1.0.0-rc.1",
     "chart.js": "2.9.4",
     "rxjs": "6.6.6",
     "tailwindcss": "2.0.4",
