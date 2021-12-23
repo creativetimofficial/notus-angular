@@ -20,6 +20,8 @@ import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 
+import { AboutUsComponent } from "./views/content/about-us/about-us.component";
+
 const routes: Routes = [
   // admin views
   {
@@ -42,6 +44,12 @@ const routes: Routes = [
       { path: "register", component: RegisterComponent },
       { path: "", redirectTo: "login", pathMatch: "full" },
     ],
+  },
+  {
+    path: "content",
+    children: [
+      { path: "about-us", component: AboutUsComponent },
+    ]
   },
   // no layout views
   { path: "profile", component: ProfileComponent },
