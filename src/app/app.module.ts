@@ -59,6 +59,8 @@ import { HotelComponent } from './views/hotel/hotel.component';
 import { DetailComponent } from './views/hotel/detail/detail.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import { SingleComponent } from './components/comment/single/single.component';
+import { CreateComponent } from './components/comment/create/create.component';
 
 @NgModule({
   declarations: [
@@ -105,6 +107,8 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     HotelComponent,
     DetailComponent,
     NotFoundComponent,
+    SingleComponent,
+    CreateComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
   providers: [],

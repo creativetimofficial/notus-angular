@@ -13,34 +13,4 @@
       </div>
     </section>
   </main>
-  <ul>
-    <li *ngFor="let comment of comments.comments">
-      {{comment.comment}}
-      {{comment.id}}
-      {{comment.author}}
-      {{comment.comment_time}}
-      <button
-        style="border: 1px solid black; background-color: red"
-        type="submit"
-        (click)="onCommentDeleteClick(comment.id)"
-      >
-        delete Coment
-      </button>
-    </li>
-  </ul>
-  <form [formGroup]="commentForm" (ngSubmit)="onCommentAddSubmit()">
-    <input
-      type="text"
-      placeholder="Comment"
-      formControlName="comment"/>
-
-    <div class="">
-      <button
-        style="border: 1px solid black; background-color: green"
-        type="submit"
-      >
-        Add Coment
-      </button>
-    </div>
-  </form>
 </div>
