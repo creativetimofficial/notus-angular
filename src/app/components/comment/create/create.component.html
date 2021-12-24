@@ -1,0 +1,19 @@
+<form [formGroup]="commentForm" (ngSubmit)="onCommentAddSubmit()">
+  <div class="rounded shadow p-4 w-full ">
+    <div class="flex justify-between">
+      <div class="flex">
+        <div class="w-full">
+          <textarea placeholder="Review" formControlName="comment" class="resize rounded-md"></textarea>
+        </div>
+      </div>
+
+      <button
+        class="h-10 bg-red-600 active:bg-red-700 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+        type="submit"
+      >
+        Add comment
+      </button>
+    </div>
+
+  </div>
+</form>

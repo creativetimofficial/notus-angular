@@ -1,0 +1,31 @@
+<div>
+  <ul>
+    <li *ngFor="let comment of comments.comments" class="mb-2">
+      <div class="rounded shadow p-4 w-full ">
+        <div class="flex justify-between">
+          <div class="flex">
+            <div class="flex flex-col items-center">
+              <i class="fas fa-user fa-10x"></i>
+              {{comment.author}}
+            </div>
+
+            <div class="flex flex-col">
+              <p>{{comment.comment}}</p>
+            </div>
+          </div>
+
+          <button
+            class="h-10 bg-red-600 active:bg-red-700 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+            type="submit"
+            (click)="onCommentDeleteClick(comment.id)"
+          >
+            <i class="fas fa-trash"></i>
+          </button>
+        </div>
+
+      </div>
+    </li>
+  </ul>
+</div>
+
+
