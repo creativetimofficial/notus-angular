@@ -1,10 +1,20 @@
 import { Component, OnInit, Input } from "@angular/core";
+import { keys } from 'ts-transformer-keys';
 
 @Component({
   selector: "app-card-table",
   templateUrl: "./card-table.component.html",
 })
 export class CardTableComponent implements OnInit {
+  @Input()
+  items: any[];
+
+  @Input()
+  schema: string[]
+
+  @Input()
+  title: string;
+
   @Input()
   get color(): string {
     return this._color;
@@ -14,7 +24,22 @@ export class CardTableComponent implements OnInit {
   }
   private _color = "light";
 
-  constructor() {}
+  constructor() {
+    this.schema = ["Project", "Budget", "Status", "Users", "Completion", ""]
+    this.items = [
+      {
+        Project: "Argon Design System",
+        Budget: "$2500 USD",
+        Status: "Status",
+        Users: "Status",
+        Completion: "Status",
+      },
+    ];
+    this.title = "Elements";
+  }
 
-  ngOnInit(): void {}
+
+  ngOnInit(): void {
+    this.schema = ["Project", "Budget", "Status", "Users", "Completion", ""]
+  }
 }

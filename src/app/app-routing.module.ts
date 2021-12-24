@@ -21,6 +21,10 @@ import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
 
 import { AboutUsComponent } from "./views/content/about-us/about-us.component";
+import {ResultComponent} from "src/app/views/search/result/result.component";
+import {SearchComponent} from "src/app/views/search/search.component";
+import {HotelsComponent} from "src/app/components/lists/hotels/hotels.component";
+import {HotelComponent} from "src/app/views/hotel/hotel.component";
 
 const routes: Routes = [
   // admin views
@@ -49,6 +53,30 @@ const routes: Routes = [
     path: "content",
     children: [
       { path: "about-us", component: AboutUsComponent },
+    ]
+  },
+  {
+    path: "search",
+    component: SearchComponent,
+    children: [
+      {
+        path: ":query",
+        // pathMatch: "full",
+        component: ResultComponent,
+      },
+    ],
+  },
+  {
+    path: "hotel",
+    children: [
+      {
+        path: ":hotel_id",
+        component: HotelComponent,
+      }, {
+        path: "",
+        redirectTo: "",
+        pathMatch: "full",
+      }
     ]
   },
   // no layout views

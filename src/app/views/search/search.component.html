@@ -1,0 +1,16 @@
+<div>
+  <app-auth-navbar></app-auth-navbar>
+  <main>
+    <section class="relative w-full h-full py-40 min-h-screen">
+      <div
+        class="absolute top-0 w-full h-full bg-blueGray-800 bg-no-repeat bg-full"
+        style="background-image: url('assets/img/register_bg_2.png')"
+      ></div>
+      <div class="flex flex-col justify-center items-center">
+        <app-searchbar (search)="onSearchQuery($event)"></app-searchbar>
+        <router-outlet class="w-full"></router-outlet>
+      </div>
+      <app-footer></app-footer>
+    </section>
+  </main>
+</div>

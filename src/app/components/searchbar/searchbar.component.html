@@ -1,0 +1,19 @@
+<form
+  [formGroup]="searchForm"
+  (ngSubmit)="onSearchClick()"
+>
+  <div class="flex items-center w-full">
+    <input
+      type="text"
+      formControlName="query"
+      placeholder="Enter your query, city, place or whatever..."
+      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-white bg-white rounded-l text-sm shadow outline-none focus:outline-none focus:ring w-full pl-10"
+    />
+    <button
+      type="submit"
+      class="border-0 px-3 py-3 placeholder-blueGray-300 text-blueGray-600 relative bg-red-400 bg-white rounded-r text-sm shadow outline-none focus:outline-none focus:ring "
+    >
+      <i class="fas fa-search"></i>
+    </button>
+  </div>
+</form>
