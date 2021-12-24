@@ -40,7 +40,6 @@ import {FooterComponent} from "./components/footers/footer/footer.component";
 import {FooterSmallComponent} from "./components/footers/footer-small/footer-small.component";
 import {HeaderStatsComponent} from "./components/headers/header-stats/header-stats.component";
 import {IndexNavbarComponent} from "./components/navbars/index-navbar/index-navbar.component";
-import {MapExampleComponent} from "./components/maps/map-example/map-example.component";
 import {IndexDropdownComponent} from "./components/dropdowns/index-dropdown/index-dropdown.component";
 import {TableDropdownComponent} from "./components/dropdowns/table-dropdown/table-dropdown.component";
 import {PagesDropdownComponent} from "./components/dropdowns/pages-dropdown/pages-dropdown.component";
@@ -56,9 +55,9 @@ import { ResultComponent } from './views/search/result/result.component';
 import { SearchComponent } from './views/search/search.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { HotelComponent } from './views/hotel/hotel.component';
-import { DetailComponent } from './views/hotel/detail/detail.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NotFoundComponent } from './views/not-found/not-found.component';
+import {HotelModule} from "./modules/hotel/hotel.module";
 
 @NgModule({
   declarations: [
@@ -82,7 +81,6 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     CardStatsComponent,
     CardTableComponent,
     HeaderStatsComponent,
-    MapExampleComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
@@ -103,10 +101,9 @@ import { NotFoundComponent } from './views/not-found/not-found.component';
     SearchComponent,
     SearchbarComponent,
     HotelComponent,
-    DetailComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, HotelModule],
   providers: [],
   bootstrap: [AppComponent],
 })
