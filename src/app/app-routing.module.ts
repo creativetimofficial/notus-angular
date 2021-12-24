@@ -25,6 +25,8 @@ import {ResultComponent} from "src/app/views/search/result/result.component";
 import {SearchComponent} from "src/app/views/search/search.component";
 import {HotelsComponent} from "src/app/components/lists/hotels/hotels.component";
 import {HotelComponent} from "src/app/views/hotel/hotel.component";
+import {DetailComponent} from "src/app/views/hotel/detail/detail.component";
+import {NotFoundComponent} from "src/app/views/not-found/not-found.component";
 
 const routes: Routes = [
   // admin views
@@ -68,13 +70,15 @@ const routes: Routes = [
   },
   {
     path: "hotel",
+    component: HotelComponent,
     children: [
       {
         path: ":hotel_id",
-        component: HotelComponent,
-      }, {
+        component: DetailComponent,
+      },
+      {
         path: "",
-        redirectTo: "",
+        redirectTo: "/",
         pathMatch: "full",
       }
     ]
@@ -82,7 +86,7 @@ const routes: Routes = [
   // no layout views
   { path: "profile", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
-  { path: "", component: IndexComponent },
+  { path: "", component: NotFoundComponent },
   { path: "**", redirectTo: "", pathMatch: "full" },
 ];
 

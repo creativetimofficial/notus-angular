@@ -1,6 +1,16 @@
 <div>
-  {{hotel.hotel.city}}
-  {{hotel.hotel.desc}}
-  {{hotel.hotel.id}}
-  {{hotel.hotel.image}}
+  <app-auth-navbar></app-auth-navbar>
+  <main>
+    <section class="relative w-full h-full py-40 min-h-screen">
+      <div
+        class="absolute top-0 w-full h-full bg-blueGray-800 bg-no-repeat bg-full"
+        style="background-image: url('assets/img/register_bg_2.png')"
+      >
+      </div>
+      <div class="absolute flex flex-col w-full justify-center items-center">
+        <router-outlet></router-outlet>
+        <app-footer></app-footer>
+      </div>
+    </section>
+  </main>
 </div>

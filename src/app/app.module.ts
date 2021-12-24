@@ -56,6 +56,9 @@ import { ResultComponent } from './views/search/result/result.component';
 import { SearchComponent } from './views/search/search.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { HotelComponent } from './views/hotel/hotel.component';
+import { DetailComponent } from './views/hotel/detail/detail.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -100,8 +103,10 @@ import { HotelComponent } from './views/hotel/hotel.component';
     SearchComponent,
     SearchbarComponent,
     HotelComponent,
+    DetailComponent,
+    NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
