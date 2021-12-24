@@ -55,7 +55,6 @@ import { ResultComponent } from './views/search/result/result.component';
 import { SearchComponent } from './views/search/search.component';
 import { SearchbarComponent } from './components/searchbar/searchbar.component';
 import { HotelComponent } from './views/hotel/hotel.component';
-import { DetailComponent } from './views/hotel/detail/detail.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { SingleComponent } from './components/comment/single/single.component';
@@ -104,11 +103,9 @@ import {HotelModule} from "./modules/hotel/hotel.module";
     SearchComponent,
     SearchbarComponent,
     HotelComponent,
-    DetailComponent,
     NotFoundComponent,
     SingleComponent,
     CreateComponent,
-    DetailComponent,
     NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, HotelModule],

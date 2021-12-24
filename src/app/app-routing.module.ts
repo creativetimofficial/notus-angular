@@ -26,7 +26,6 @@ import {SearchComponent} from "src/app/views/search/search.component";
 import {HotelsComponent} from "src/app/components/lists/hotels/hotels.component";
 import {HotelComponent} from "src/app/views/hotel/hotel.component";
 import {NotFoundComponent} from "src/app/views/not-found/not-found.component";
-import {DetailComponent} from "src/app/views/hotel/detail/detail.component";
 import {AuthGuard} from "./auth-guard.service";
 
 const routes: Routes = [
