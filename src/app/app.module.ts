@@ -61,6 +61,9 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { SingleComponent } from './components/comment/single/single.component';
 import { CreateComponent } from './components/comment/create/create.component';
+import { DetailComponent } from './views/hotel/detail/detail.component';
+import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
+import { NotFoundComponent } from './views/not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -109,6 +112,8 @@ import { CreateComponent } from './components/comment/create/create.component';
     NotFoundComponent,
     SingleComponent,
     CreateComponent,
+    DetailComponent,
+    NotFoundComponent,
   ],
   imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
   providers: [],
