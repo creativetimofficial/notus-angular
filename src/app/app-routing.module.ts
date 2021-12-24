@@ -23,7 +23,10 @@ import { ProfileComponent } from "./views/profile/profile.component";
 import { AboutUsComponent } from "./views/content/about-us/about-us.component";
 import {ResultComponent} from "src/app/views/search/result/result.component";
 import {SearchComponent} from "src/app/views/search/search.component";
+import {HotelsComponent} from "src/app/components/lists/hotels/hotels.component";
+import {HotelComponent} from "src/app/views/hotel/hotel.component";
 import {NotFoundComponent} from "src/app/views/not-found/not-found.component";
+import {DetailComponent} from "src/app/views/hotel/detail/detail.component";
 import {AuthGuard} from "./auth-guard.service";
 
 const routes: Routes = [
@@ -71,11 +74,11 @@ const routes: Routes = [
     loadChildren: () => import('./modules/hotel/hotel.module').then(mod => mod.HotelModule)
   },
   // no layout views
-  { path: "profile", component: ProfileComponent,        canActivate: [AuthGuard]
-  },
-  { path: "landing", component: LandingComponent},
-  { path: "", component: NotFoundComponent},
-  { path: "**", redirectTo: "", pathMatch: "full" },
+  { path: "profile", component: ProfileComponent, canActivate: [AuthGuard] },
+  { path: "landing", component: LandingComponent },
+  { path: "404", component: NotFoundComponent },
+  { path: "", component: LandingComponent },
+  { path: "**", redirectTo: "/404", pathMatch: "full" },
 ];
 
 @NgModule({
