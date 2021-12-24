@@ -4,10 +4,6 @@ import { DetailComponent } from 'src/app/views/hotel/detail/detail.component';
 
 
 const routes: Routes = [
-  {
-    path: ":hotel_id",
-    component: DetailComponent,
-  },
 ];
 
 @NgModule({

@@ -26,7 +26,6 @@ import {ProfileComponent} from "./views/profile/profile.component";
 // components for views and layouts
 
 import {AdminNavbarComponent} from "./components/navbars/admin-navbar/admin-navbar.component";
-import {AuthNavbarComponent} from "./components/navbars/auth-navbar/auth-navbar.component";
 import {CardBarChartComponent} from "./components/cards/card-bar-chart/card-bar-chart.component";
 import {CardLineChartComponent} from "./components/cards/card-line-chart/card-line-chart.component";
 import {CardPageVisitsComponent} from "./components/cards/card-page-visits/card-page-visits.component";
@@ -36,7 +35,6 @@ import {CardSocialTrafficComponent} from "./components/cards/card-social-traffic
 import {CardStatsComponent} from "./components/cards/card-stats/card-stats.component";
 import {CardTableComponent} from "./components/cards/card-table/card-table.component";
 import {FooterAdminComponent} from "./components/footers/footer-admin/footer-admin.component";
-import {FooterComponent} from "./components/footers/footer/footer.component";
 import {FooterSmallComponent} from "./components/footers/footer-small/footer-small.component";
 import {HeaderStatsComponent} from "./components/headers/header-stats/header-stats.component";
 import {IndexNavbarComponent} from "./components/navbars/index-navbar/index-navbar.component";
@@ -49,21 +47,29 @@ import {UserDropdownComponent} from "./components/dropdowns/user-dropdown/user-d
 import {AboutUsComponent} from './views/content/about-us/about-us.component';
 
 import {ReactiveFormsModule} from '@angular/forms';
-import { CardHotelComponent } from './components/cards/card-hotel/card-hotel.component';
-import { HotelsComponent } from './components/lists/hotels/hotels.component';
-import { ResultComponent } from './views/search/result/result.component';
-import { SearchComponent } from './views/search/search.component';
-import { SearchbarComponent } from './components/searchbar/searchbar.component';
-import { HotelComponent } from './views/hotel/hotel.component';
+import {CardHotelComponent} from './components/cards/card-hotel/card-hotel.component';
+import {HotelsComponent} from './components/lists/hotels/hotels.component';
+import {ResultComponent} from './views/search/result/result.component';
+import {SearchComponent} from './views/search/search.component';
+import {SearchbarComponent} from './components/searchbar/searchbar.component';
 import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
-import { NotFoundComponent } from './views/not-found/not-found.component';
-import { SingleComponent } from './components/comment/single/single.component';
-import { CreateComponent } from './components/comment/create/create.component';
+import {NotFoundComponent} from './views/not-found/not-found.component';
 import {HotelModule} from "./modules/hotel/hotel.module";
+import {SharedModule} from "src/app/modules/shared/shared.module";
+import {DetailComponent} from "src/app/views/hotel/detail/detail.component";
+import {HotelComponent} from "src/app/views/hotel/hotel.component";
+import {SingleComponent} from "src/app/components/comment/single/single.component";
+import {CreateComponent} from "src/app/components/comment/create/create.component";
+import {AuthNavbarComponent} from "src/app/components/navbars/auth-navbar/auth-navbar.component";
+import {FooterComponent} from "src/app/components/footers/footer/footer.component";
+import {CommonModule} from "@angular/common";
 
 @NgModule({
   declarations: [
     AppComponent,
+    AuthNavbarComponent,
+    FooterComponent,
+
     DashboardComponent,
     CardBarChartComponent,
     CardLineChartComponent,
@@ -73,7 +79,6 @@ import {HotelModule} from "./modules/hotel/hotel.module";
     NotificationDropdownComponent,
     UserDropdownComponent,
     SidebarComponent,
-    FooterComponent,
     FooterSmallComponent,
     FooterAdminComponent,
     CardPageVisitsComponent,
@@ -83,7 +88,6 @@ import {HotelModule} from "./modules/hotel/hotel.module";
     CardStatsComponent,
     CardTableComponent,
     HeaderStatsComponent,
-    AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
     AdminComponent,
@@ -102,13 +106,14 @@ import {HotelModule} from "./modules/hotel/hotel.module";
     ResultComponent,
     SearchComponent,
     SearchbarComponent,
-    HotelComponent,
     NotFoundComponent,
+    DetailComponent,
+    HotelComponent,
     SingleComponent,
     CreateComponent,
-    NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, HotelModule],
+  imports: [
+    CommonModule, BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
   providers: [],
   bootstrap: [AppComponent],
 })
