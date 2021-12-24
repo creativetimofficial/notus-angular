@@ -3,7 +3,7 @@ import {SignInModel, SignUpModel} from "src/app/models/auth";
 import {Error} from "src/app/models/error";
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: `root`
 })
 export class AuthService {
 
