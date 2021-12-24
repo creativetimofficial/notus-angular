@@ -1,0 +1,5 @@
+export enum AuthStateEnum {
+  NOT_AUTHORIZED='NOT_AUTHORIZED',
+  AUTHORIZED='AUTHORIZED',
+  ADMIN='ADMIN',
+}

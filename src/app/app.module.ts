@@ -40,7 +40,6 @@ import {FooterComponent} from "./components/footers/footer/footer.component";
 import {FooterSmallComponent} from "./components/footers/footer-small/footer-small.component";
 import {HeaderStatsComponent} from "./components/headers/header-stats/header-stats.component";
 import {IndexNavbarComponent} from "./components/navbars/index-navbar/index-navbar.component";
-import {MapExampleComponent} from "./components/maps/map-example/map-example.component";
 import {IndexDropdownComponent} from "./components/dropdowns/index-dropdown/index-dropdown.component";
 import {TableDropdownComponent} from "./components/dropdowns/table-dropdown/table-dropdown.component";
 import {PagesDropdownComponent} from "./components/dropdowns/pages-dropdown/pages-dropdown.component";
@@ -61,6 +60,7 @@ import {BrowserAnimationsModule} from "@angular/platform-browser/animations";
 import { NotFoundComponent } from './views/not-found/not-found.component';
 import { SingleComponent } from './components/comment/single/single.component';
 import { CreateComponent } from './components/comment/create/create.component';
+import {HotelModule} from "./modules/hotel/hotel.module";
 
 @NgModule({
   declarations: [
@@ -84,7 +84,6 @@ import { CreateComponent } from './components/comment/create/create.component';
     CardStatsComponent,
     CardTableComponent,
     HeaderStatsComponent,
-    MapExampleComponent,
     AuthNavbarComponent,
     AdminNavbarComponent,
     IndexNavbarComponent,
@@ -112,7 +111,7 @@ import { CreateComponent } from './components/comment/create/create.component';
     DetailComponent,
     NotFoundComponent,
   ],
-  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule],
+  imports: [BrowserModule, AppRoutingModule, ReactiveFormsModule, BrowserAnimationsModule, HotelModule],
   providers: [],
   bootstrap: [AppComponent],
 })
