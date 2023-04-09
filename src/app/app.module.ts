@@ -47,7 +47,8 @@ import { PagesDropdownComponent } from "./components/dropdowns/pages-dropdown/pa
 import { NotificationDropdownComponent } from "./components/dropdowns/notification-dropdown/notification-dropdown.component";
 import { SidebarComponent } from "./components/sidebar/sidebar.component";
 import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user-dropdown.component";
-
+import { ToastrModule } from 'ngx-toastr';
+import { EmployeesComponent } from "./views/admin/employees/employees.component";
 @NgModule({
   declarations: [
     AppComponent,
@@ -84,8 +85,9 @@ import { UserDropdownComponent } from "./components/dropdowns/user-dropdown/user
     IndexComponent,
     LandingComponent,
     ProfileComponent,
+    EmployeesComponent
   ],
-  imports: [BrowserModule, AppRoutingModule],
+  imports: [BrowserModule, AppRoutingModule,ToastrModule.forRoot()],
   providers: [],
   bootstrap: [AppComponent],
 })
