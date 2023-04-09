@@ -1,0 +1,15 @@
+div.dataTables_wrapper div.dataTables_info{
+    display: none;
+}
+.navbar{
+    margin-bottom: 20px;
+}
+.title-heading{
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 14px;
+}
+.title-heading i{
+    font-size: 24px;
+    margin-left: 24px;
+}

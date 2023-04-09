@@ -19,6 +19,7 @@ import { RegisterComponent } from "./views/auth/register/register.component";
 import { IndexComponent } from "./views/index/index.component";
 import { LandingComponent } from "./views/landing/landing.component";
 import { ProfileComponent } from "./views/profile/profile.component";
+import { EmployeesComponent } from "./views/admin/employees/employees.component";
 
 const routes: Routes = [
   // admin views
@@ -30,6 +31,7 @@ const routes: Routes = [
       { path: "settings", component: SettingsComponent },
       { path: "tables", component: TablesComponent },
       { path: "maps", component: MapsComponent },
+      { path: "employees", component: EmployeesComponent },
       { path: "", redirectTo: "dashboard", pathMatch: "full" },
     ],
   },
@@ -46,8 +48,8 @@ const routes: Routes = [
   // no layout views
   { path: "profile", component: ProfileComponent },
   { path: "landing", component: LandingComponent },
-  { path: "", component: IndexComponent },
-  { path: "**", redirectTo: "", pathMatch: "full" },
+  { path: "", redirectTo: "admin", pathMatch: "full" },
+  { path: "**", redirectTo: "admin", pathMatch: "full" },
 ];
 
 @NgModule({
