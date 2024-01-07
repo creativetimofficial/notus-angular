@@ -1,109 +1,79 @@
-import { Component, OnInit, AfterViewInit } from "@angular/core";
-import Chart from "chart.js";
+import {Component, OnInit, AfterViewInit} from '@angular/core';
+import { ViewChild } from '@angular/core';
+import { ChartConfiguration, ChartData, ChartEvent, ChartType } from 'chart.js/auto';
+import { BaseChartDirective } from 'ng2-charts';
+
+import DataLabelsPlugin from 'chartjs-plugin-datalabels';
 
 @Component({
-  selector: "app-card-bar-chart",
-  templateUrl: "./card-bar-chart.component.html",
+  selector: 'app-card-bar-chart',
+  templateUrl: './card-bar-chart.component.html',
 })
-export class CardBarChartComponent implements OnInit, AfterViewInit {
-  constructor() {}
+export class CardBarChartComponent {
+  @ViewChild(BaseChartDirective) chart: BaseChartDirective | undefined;
 
-  ngOnInit() {}
-  ngAfterViewInit() {
-    let config = {
-      type: "bar",
-      data: {
-        labels: [
-          "January",
-          "February",
-          "March",
-          "April",
-          "May",
-          "June",
-          "July",
-        ],
-        datasets: [
-          {
-            label: new Date().getFullYear(),
-            backgroundColor: "#ed64a6",
-            borderColor: "#ed64a6",
-            data: [30, 78, 56, 34, 100, 45, 13],
-            fill: false,
-            barThickness: 8,
-          },
-          {
-            label: new Date().getFullYear() - 1,
-            fill: false,
-            backgroundColor: "#4c51bf",
-            borderColor: "#4c51bf",
-            data: [27, 68, 86, 74, 10, 4, 87],
-            barThickness: 8,
-          },
-        ],
+  public barChartOptions: ChartConfiguration['options'] = {
+    // We use these empty structures as placeholders for dynamic theming.
+    scales: {
+      x: {},
+      y: {
+        min: 10,
       },
-      options: {
-        maintainAspectRatio: false,
-        responsive: true,
-        title: {
-          display: false,
-          text: "Orders Chart",
-        },
-        tooltips: {
-          mode: "index",
-          intersect: false,
-        },
-        hover: {
-          mode: "nearest",
-          intersect: true,
-        },
-        legend: {
-          labels: {
-            fontColor: "rgba(0,0,0,.4)",
-          },
-          align: "end",
-          position: "bottom",
-        },
-        scales: {
-          xAxes: [
-            {
-              display: false,
-              scaleLabel: {
-                display: true,
-                labelString: "Month",
-              },
-              gridLines: {
-                borderDash: [2],
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.3)",
-                zeroLineColor: "rgba(33, 37, 41, 0.3)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
-            },
-          ],
-          yAxes: [
-            {
-              display: true,
-              scaleLabel: {
-                display: false,
-                labelString: "Value",
-              },
-              gridLines: {
-                borderDash: [2],
-                drawBorder: false,
-                borderDashOffset: [2],
-                color: "rgba(33, 37, 41, 0.2)",
-                zeroLineColor: "rgba(33, 37, 41, 0.15)",
-                zeroLineBorderDash: [2],
-                zeroLineBorderDashOffset: [2],
-              },
-            },
-          ],
-        },
+    },
+    plugins: {
+      legend: {
+        display: true,
       },
-    };
-    let ctx: any = document.getElementById("bar-chart");
-    ctx = ctx.getContext("2d");
-    new Chart(ctx, config);
+      datalabels: {
+        anchor: 'end',
+        align: 'end',
+      },
+    },
+  };
+  public barChartType: ChartType = 'bar';
+  public barChartPlugins = [DataLabelsPlugin];
+
+  public barChartData: ChartData<'bar'> = {
+    labels: ['2006', '2007', '2008', '2009', '2010', '2011', '2012'],
+    datasets: [
+      { data: [65, 59, 80, 81, 56, 55, 40], label: 'Series A' },
+      { data: [28, 48, 40, 19, 86, 27, 90], label: 'Series B' },
+    ],
+  };
+
+  // events
+  public chartClicked({
+                        event,
+                        active,
+                      }: {
+    event?: ChartEvent;
+    active?: object[];
+  }): void {
+    console.log(event, active);
+  }
+
+  public chartHovered({
+                        event,
+                        active,
+                      }: {
+    event?: ChartEvent;
+    active?: object[];
+  }): void {
+    console.log(event, active);
+  }
+
+  public randomize(): void {
+    // Only Change 3 values
+    this.barChartData.datasets[0].data = [
+      Math.round(Math.random() * 100),
+      59,
+      80,
+      Math.round(Math.random() * 100),
+      56,
+      Math.round(Math.random() * 100),
+      40,
+    ];
+
+    this.chart?.update();
   }
 }

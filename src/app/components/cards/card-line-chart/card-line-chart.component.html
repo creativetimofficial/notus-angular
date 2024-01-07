@@ -14,7 +14,45 @@
   <div class="p-4 flex-auto">
     <!-- Chart -->
     <div class="relative" style="height: 350px">
-      <canvas id="line-chart"></canvas>
+      <canvas
+        baseChart
+        class="chart"
+        [data]="lineChartData"
+        [options]="lineChartOptions"
+        [type]="lineChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"
+      ></canvas>
+      <table>
+        <tr>
+          <th *ngFor="let label of lineChartData.labels">{{ label }}</th>
+        </tr>
+        <tr
+          *ngFor="let d of lineChartData.datasets; let i = index"
+          [class]="'line-' + i"
+        >
+          <td *ngFor="let label of lineChartData.labels; let j = index">
+            {{ d && d.data[j] }}
+          </td>
+        </tr>
+      </table>
+      <div class="button-row">
+        <button (click)="randomize()">
+          Randomize
+        </button>
+        <button (click)="pushOne()">
+          Push
+        </button>
+        <button (click)="changeColor()">
+          Recolor
+        </button>
+        <button (click)="hideOne()">
+          Toggle Series B
+        </button>
+        <button (click)="changeLabel()">
+          Change Label
+        </button>
+      </div>
     </div>
   </div>
 </div>
