@@ -14,7 +14,21 @@
   <div class="p-4 flex-auto">
     <!-- Chart -->
     <div class="relative" style="height: 350px">
-      <canvas id="bar-chart"></canvas>
+      <canvas
+        baseChart
+        class="chart"
+        [data]="barChartData"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [type]="barChartType"
+        (chartHover)="chartHovered($event)"
+        (chartClick)="chartClicked($event)"
+      >
+      </canvas>
+
+      <button (click)="randomize()">
+        Update
+      </button>
     </div>
   </div>
 </div>
